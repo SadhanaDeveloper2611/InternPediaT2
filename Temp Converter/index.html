@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter || Sadhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <h1>Temperature Converter <span class="temp-icon">🌡️</span></h1>
+        <div class="converter">
+            <div class="input-group">
+                <label for="inputTemperature">Enter Temperature:</label>
+                <input type="number" id="inputTemperature" placeholder="Enter temperature">
+            </div>
+            <div class="input-group">
+                <label for="inputUnit">Select Unit:</label>
+                <select id="inputUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <button onclick="convertTemperature()">Convert</button>
+        </div>
+        <div class="result">
+            <p id="outputCelsius"></p>
+            <p id="outputFahrenheit"></p> 
+            <p id="outputKelvin"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
